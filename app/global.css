@@ -56,3 +56,7 @@ p {
 next-route-announcer {
     display: none;
 }
+
+vercel-live-feedback {
+    display: none;
+}
