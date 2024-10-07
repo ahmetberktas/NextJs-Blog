@@ -1,4 +1,5 @@
 import React from "react";
+import { notFound } from "next/navigation";
 import Image from "next/image";
 import styles from "./styles.module.css";
 
@@ -13,6 +14,11 @@ async function getPost(id) {
 
 export default async function Page({ params }) {
   const { id, title, body } = await getPost(params.id);
+
+  if (!title) {
+    return notFound();
+  }
+
   return (
     <div className={styles.blogContainer}>
       <div className={styles.cardImage}>

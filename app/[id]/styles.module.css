@@ -20,3 +20,16 @@
     font-size: 48px;
     margin-top: 8px;
 }
+
+.notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.notfound h1 {
+    font-size: 2.5rem;
+    color: #fc1c1c;
+}
